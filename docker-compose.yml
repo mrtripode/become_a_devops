@@ -1,0 +1,86 @@
+version: '3.9'
+services: 
+  nginx: 
+    container_name: nginx
+    build: 
+      context: $PWD/nginx
+      dockerfile: Dockerfile
+    image: nginx:latest
+    hostname: nginx-server
+    ports: 
+      ## Syntax: host_port:container_port
+      - 80:80
+    restart: always
+    volumes: 
+      ## Syntax: /host/path:/container/path 
+      - $PWD/nginx/data/tmp:/tmp
+      - $PWD/nginx/data/html:/usr/share/nginx/html:ro
+      - $PWD/nginx/data/log:/var/log/nginx
+      - $PWD/nginx/data/templates:/etc/nginx/templates
+      - $PWD/nginx/data/conf/nginx.conf:/etc/nginx/nginx.conf:rw
+      #- $PWD/nginx/data/conf/conf.d:/etc/nginx/conf.d:ro
+    command: [nginx-debug, '-g', 'daemon off;']
+    networks: 
+      - net
+  sonarqube: 
+    container_name: sonarqube
+    image: sonarqube:lts
+    hostname: sq-server 
+    depends_on: 
+      - nginx
+      - jenkins
+    ports: 
+      - 9000:9000
+    restart: always
+    volumes: 
+      - "$PWD/sonarqube/data:/opt/sonarqube/data"
+      - "$PWD/sonarqube/logs:/opt/sonarqube/logs"
+      - "$PWD/sonarqube/extensions:/opt/sonarqube/extensions"
+    networks: 
+      - net
+  jenkins: 
+    container_name: jenkins
+    build:
+      context: $PWD/jenkins
+      dockerfile: Dockerfile
+    image: jenkins:lts-jdk11
+    hostname: jenkins-server
+    depends_on: 
+      - nginx
+      - remote_host
+    restart: always
+    ports: 
+      - 8080:8080
+    volumes: 
+      - $PWD/jenkins/home:/var/jenkins_home
+        #- $PWD/jenkins/home/tmp:/tmp:ro
+    networks: 
+      - net
+  remote_host: 
+    container_name: remote_host
+    build: 
+      context: $PWD/centos8
+      dockerfile: Dockerfile
+    image: remote_host
+    hostname: remote_host
+    depends_on:
+      - nginx
+    restart: always
+    volumes:
+      - $PWD/centos8/aws-s3.sh:/tmp/script.sh
+      - $PWD/centos8/tmp:/tmp
+    networks: 
+      - net
+  db_host:
+    container_name: db
+    hostname: db-server
+    image: mysql:5.7
+    environment:
+      - "MYSQL_ROOT_PASSWORD=1234"
+    restart: always
+    volumes:
+      - $PWD/db_data:/var/lib/mysql
+    networks: 
+      - net
+networks: 
+  net: 

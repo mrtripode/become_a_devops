@@ -1,0 +1,8 @@
+Started at Sun Dec 05 03:02:03 UTC 2021
+Processing backup-mysql-to-aws-s3
+Offering backup-mysql-to-aws-s3 to Project Build Discarder
+Processing my-first-job
+Offering my-first-job to Project Build Discarder
+Processing remote-task
+Offering remote-task to Project Build Discarder
+Finished at Sun Dec 05 03:02:03 UTC 2021. 2ms

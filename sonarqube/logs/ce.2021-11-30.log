@@ -1,0 +1,96 @@
+2021.11.30 01:22:31 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2021.11.30 01:22:31 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2021.11.30 01:22:31 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [http://localhost:9001]
+2021.11.30 01:22:32 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://127.0.0.1:9092/sonar
+2021.11.30 01:22:32 WARN  ce[][o.s.db.dialect.H2] H2 database should be used for evaluation purpose only.
+2021.11.30 01:22:33 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2021.11.30 01:22:33 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2021.11.30 01:22:34 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Community edition
+2021.11.30 01:22:34 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2021.11.30 01:34:54 INFO  ce[][o.s.p.ProcessEntryPoint] Gracefully stopping process
+2021.11.30 01:34:54 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopping...
+2021.11.30 01:34:54 INFO  ce[][o.s.c.t.CeProcessingSchedulerImpl] Gracefully stopping workers...
+2021.11.30 01:34:54 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopped
+2021.11.30 01:37:51 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2021.11.30 01:37:51 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2021.11.30 01:37:51 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [http://localhost:9001]
+2021.11.30 01:37:52 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://127.0.0.1:9092/sonar
+2021.11.30 01:37:52 WARN  ce[][o.s.db.dialect.H2] H2 database should be used for evaluation purpose only.
+2021.11.30 01:37:53 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2021.11.30 01:37:53 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2021.11.30 01:37:53 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Community edition
+2021.11.30 01:37:53 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2021.11.30 01:42:48 INFO  ce[][o.s.p.ProcessEntryPoint] Gracefully stopping process
+2021.11.30 01:42:48 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopping...
+2021.11.30 01:42:48 INFO  ce[][o.s.c.t.CeProcessingSchedulerImpl] Gracefully stopping workers...
+2021.11.30 01:42:48 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopped
+2021.11.30 01:43:41 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2021.11.30 01:43:41 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2021.11.30 01:43:41 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [http://localhost:9001]
+2021.11.30 01:43:42 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://127.0.0.1:9092/sonar
+2021.11.30 01:43:42 WARN  ce[][o.s.db.dialect.H2] H2 database should be used for evaluation purpose only.
+2021.11.30 01:43:43 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2021.11.30 01:43:43 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2021.11.30 01:43:44 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Community edition
+2021.11.30 01:43:44 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2021.11.30 02:25:51 INFO  ce[][o.s.p.ProcessEntryPoint] Gracefully stopping process
+2021.11.30 02:25:51 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopping...
+2021.11.30 02:25:51 INFO  ce[][o.s.c.t.CeProcessingSchedulerImpl] Gracefully stopping workers...
+2021.11.30 02:25:51 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopped
+2021.11.30 02:29:10 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2021.11.30 02:29:10 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2021.11.30 02:29:10 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [http://localhost:9001]
+2021.11.30 02:29:10 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://127.0.0.1:9092/sonar
+2021.11.30 02:29:11 WARN  ce[][o.s.db.dialect.H2] H2 database should be used for evaluation purpose only.
+2021.11.30 02:29:12 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2021.11.30 02:29:12 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2021.11.30 02:29:12 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Community edition
+2021.11.30 02:29:12 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2021.11.30 02:39:47 INFO  ce[][o.s.p.ProcessEntryPoint] Gracefully stopping process
+2021.11.30 02:39:47 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopping...
+2021.11.30 02:39:47 INFO  ce[][o.s.c.t.CeProcessingSchedulerImpl] Gracefully stopping workers...
+2021.11.30 02:39:47 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopped
+2021.11.30 02:40:29 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2021.11.30 02:40:29 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2021.11.30 02:40:29 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [http://localhost:9001]
+2021.11.30 02:40:30 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://127.0.0.1:9092/sonar
+2021.11.30 02:40:30 WARN  ce[][o.s.db.dialect.H2] H2 database should be used for evaluation purpose only.
+2021.11.30 02:40:31 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2021.11.30 02:40:31 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2021.11.30 02:40:32 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Community edition
+2021.11.30 02:40:32 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2021.11.30 02:46:40 INFO  ce[][o.s.p.ProcessEntryPoint] Gracefully stopping process
+2021.11.30 02:46:40 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopping...
+2021.11.30 02:46:40 INFO  ce[][o.s.c.t.CeProcessingSchedulerImpl] Gracefully stopping workers...
+2021.11.30 02:46:40 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopped
+2021.11.30 02:47:24 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2021.11.30 02:47:24 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2021.11.30 02:47:24 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [http://localhost:9001]
+2021.11.30 02:47:24 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://127.0.0.1:9092/sonar
+2021.11.30 02:47:24 WARN  ce[][o.s.db.dialect.H2] H2 database should be used for evaluation purpose only.
+2021.11.30 02:47:25 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2021.11.30 02:47:25 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2021.11.30 02:47:26 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Community edition
+2021.11.30 02:47:26 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2021.11.30 03:14:25 INFO  ce[][o.s.p.ProcessEntryPoint] Gracefully stopping process
+2021.11.30 03:14:25 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopping...
+2021.11.30 03:14:25 INFO  ce[][o.s.c.t.CeProcessingSchedulerImpl] Gracefully stopping workers...
+2021.11.30 03:14:25 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopped
+2021.11.30 03:15:34 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2021.11.30 03:15:34 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2021.11.30 03:15:34 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [http://localhost:9001]
+2021.11.30 03:15:37 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://127.0.0.1:9092/sonar
+2021.11.30 03:15:37 WARN  ce[][o.s.db.dialect.H2] H2 database should be used for evaluation purpose only.
+2021.11.30 03:16:01 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2021.11.30 03:16:02 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2021.11.30 03:16:03 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Community edition
+2021.11.30 03:16:03 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2021.11.30 11:06:21 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2021.11.30 11:06:21 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2021.11.30 11:06:21 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [http://localhost:9001]
+2021.11.30 11:06:22 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://127.0.0.1:9092/sonar
+2021.11.30 11:06:22 WARN  ce[][o.s.db.dialect.H2] H2 database should be used for evaluation purpose only.
+2021.11.30 11:06:24 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2021.11.30 11:06:24 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2021.11.30 11:06:25 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Community edition
+2021.11.30 11:06:25 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational

@@ -1,0 +1,12 @@
+Started by user [8mha:////4F7cp0kGZl/nSkO+6+291Vd//RXPXfHVRZGc5E8ZJX2iAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZu/dLi1CL9xJTczDwACG0V4sAAAAA=[0mJenkins Admin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/mysql-backup
+[SSH] script:
+
+mysqldump -u root -h db_host -p testdb > /tmp/db_2.sql
+aws s3 cp /tmp/db_2.sql s3://jnk-mysql-backup/db_2.sql
+
+[SSH] executing...
+Enter password: Build was aborted
+Aborted by [8mha:////4F7cp0kGZl/nSkO+6+291Vd//RXPXfHVRZGc5E8ZJX2iAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZu/dLi1CL9xJTczDwACG0V4sAAAAA=[0mJenkins Admin
+Finished: ABORTED

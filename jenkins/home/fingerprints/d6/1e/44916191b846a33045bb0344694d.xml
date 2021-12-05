@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2021-12-05 02:01:33.140 UTC</timestamp>
+  <md5sum>d61e44916191b846a33045bb0344694d</md5sum>
+  <fileName>Credential id=AWS_SECRET_KEY name=The key that let we connect to Amazon Services</fileName>
+  <usages>
+    <entry>
+      <string>backup-mysql-to-aws-s3</string>
+      <ranges>2-5</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

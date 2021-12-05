@@ -1,0 +1,1120 @@
+2021.11.28 00:02:11 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 00:02:11 INFO  es[][o.e.n.Node] stopped
+2021.11.28 00:02:11 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 00:02:11 INFO  es[][o.e.n.Node] closed
+2021.11.28 00:02:28 INFO  es[][o.e.n.Node] version[7.13.4], pid[38], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 00:02:28 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 00:02:28 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 00:02:29 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 00:02:29 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 00:02:29 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 00:02:29 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 00:02:29 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 00:02:29 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 00:02:29 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 00:02:29 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 00:02:29 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 00:02:29 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 00:02:33 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 00:02:33 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 00:02:33 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 00:02:34 INFO  es[][o.e.n.Node] initialized
+2021.11.28 00:02:34 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 00:02:34 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:32801}, bound_addresses {127.0.0.1:32801}
+2021.11.28 00:02:34 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 00:02:34 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 00:02:34 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{VcRnYRFYSjGTAXpJF3FjOw}{127.0.0.1}{127.0.0.1:32801}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 11, version: 228, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{VcRnYRFYSjGTAXpJF3FjOw}{127.0.0.1}{127.0.0.1:32801}{cdfhimrsw}]}
+2021.11.28 00:02:34 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{VcRnYRFYSjGTAXpJF3FjOw}{127.0.0.1}{127.0.0.1:32801}{cdfhimrsw}]}, term: 11, version: 228, reason: Publication{term=11, version=228}
+2021.11.28 00:02:34 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 00:02:34 INFO  es[][o.e.n.Node] started
+2021.11.28 00:02:35 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 00:02:37 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][0], [metadatas][0]]]).
+2021.11.28 00:19:28 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 00:19:28 INFO  es[][o.e.n.Node] stopped
+2021.11.28 00:19:28 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 00:19:28 INFO  es[][o.e.n.Node] closed
+2021.11.28 00:26:15 INFO  es[][o.e.n.Node] version[7.13.4], pid[39], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 00:26:15 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 00:26:15 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 00:26:16 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 00:26:16 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 00:26:16 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 00:26:16 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 00:26:16 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 00:26:16 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 00:26:16 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 00:26:16 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 00:26:16 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 00:26:16 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 00:26:21 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 00:26:21 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 00:26:21 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 00:26:21 INFO  es[][o.e.n.Node] initialized
+2021.11.28 00:26:21 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 00:26:21 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:41209}, bound_addresses {127.0.0.1:41209}
+2021.11.28 00:26:22 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 00:26:22 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 00:26:22 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{Az9LrBgeQay8mzdxWMyNMg}{127.0.0.1}{127.0.0.1:41209}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 12, version: 249, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{Az9LrBgeQay8mzdxWMyNMg}{127.0.0.1}{127.0.0.1:41209}{cdfhimrsw}]}
+2021.11.28 00:26:22 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{Az9LrBgeQay8mzdxWMyNMg}{127.0.0.1}{127.0.0.1:41209}{cdfhimrsw}]}, term: 12, version: 249, reason: Publication{term=12, version=249}
+2021.11.28 00:26:22 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 00:26:22 INFO  es[][o.e.n.Node] started
+2021.11.28 00:26:22 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 00:26:25 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][1], [components][0], [metadatas][0]]]).
+2021.11.28 00:29:32 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 00:29:32 INFO  es[][o.e.n.Node] stopped
+2021.11.28 00:29:32 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 00:29:32 INFO  es[][o.e.n.Node] closed
+2021.11.28 00:29:38 INFO  es[][o.e.n.Node] version[7.13.4], pid[39], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 00:29:38 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 00:29:38 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 00:29:39 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 00:29:39 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 00:29:39 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 00:29:39 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 00:29:39 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 00:29:39 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 00:29:39 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 00:29:39 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 00:29:39 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 00:29:39 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 00:29:43 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 00:29:43 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 00:29:43 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 00:29:44 INFO  es[][o.e.n.Node] initialized
+2021.11.28 00:29:44 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 00:29:44 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:39517}, bound_addresses {127.0.0.1:39517}
+2021.11.28 00:29:44 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 00:29:44 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 00:29:45 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{ON2I9o6BTUq8HZmCUyY-1Q}{127.0.0.1}{127.0.0.1:39517}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 13, version: 269, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{ON2I9o6BTUq8HZmCUyY-1Q}{127.0.0.1}{127.0.0.1:39517}{cdfhimrsw}]}
+2021.11.28 00:29:45 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{ON2I9o6BTUq8HZmCUyY-1Q}{127.0.0.1}{127.0.0.1:39517}{cdfhimrsw}]}, term: 13, version: 269, reason: Publication{term=13, version=269}
+2021.11.28 00:29:45 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 00:29:45 INFO  es[][o.e.n.Node] started
+2021.11.28 00:29:45 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 00:29:47 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][0], [metadatas][0]]]).
+2021.11.28 00:35:57 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 00:35:57 INFO  es[][o.e.n.Node] stopped
+2021.11.28 00:35:57 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 00:35:57 INFO  es[][o.e.n.Node] closed
+2021.11.28 00:36:24 INFO  es[][o.e.n.Node] version[7.13.4], pid[39], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 00:36:24 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 00:36:24 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 00:36:25 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 00:36:25 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 00:36:25 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 00:36:25 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 00:36:25 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 00:36:25 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 00:36:25 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 00:36:25 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 00:36:25 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 00:36:25 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 00:36:29 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 00:36:29 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 00:36:30 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 00:36:30 INFO  es[][o.e.n.Node] initialized
+2021.11.28 00:36:30 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 00:36:30 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:42665}, bound_addresses {127.0.0.1:42665}
+2021.11.28 00:36:31 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 00:36:31 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 00:36:31 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{V-_BShEaQ_y3SMK4GrCvtQ}{127.0.0.1}{127.0.0.1:42665}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 14, version: 290, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{V-_BShEaQ_y3SMK4GrCvtQ}{127.0.0.1}{127.0.0.1:42665}{cdfhimrsw}]}
+2021.11.28 00:36:31 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{V-_BShEaQ_y3SMK4GrCvtQ}{127.0.0.1}{127.0.0.1:42665}{cdfhimrsw}]}, term: 14, version: 290, reason: Publication{term=14, version=290}
+2021.11.28 00:36:31 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 00:36:31 INFO  es[][o.e.n.Node] started
+2021.11.28 00:36:31 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 00:36:33 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[metadatas][0], [components][2], [components][0]]]).
+2021.11.28 00:40:35 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 00:40:35 INFO  es[][o.e.n.Node] stopped
+2021.11.28 00:40:35 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 00:40:35 INFO  es[][o.e.n.Node] closed
+2021.11.28 00:40:51 INFO  es[][o.e.n.Node] version[7.13.4], pid[39], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 00:40:51 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 00:40:51 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 00:40:51 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 00:40:51 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 00:40:51 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 00:40:51 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 00:40:51 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 00:40:51 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 00:40:51 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 00:40:52 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 00:40:52 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 00:40:52 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 00:40:56 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 00:40:56 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 00:40:57 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 00:40:57 INFO  es[][o.e.n.Node] initialized
+2021.11.28 00:40:57 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 00:40:57 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:36597}, bound_addresses {127.0.0.1:36597}
+2021.11.28 00:40:58 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 00:40:58 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 00:40:58 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{YcGStKUUTlOGmOwgDWIssQ}{127.0.0.1}{127.0.0.1:36597}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 15, version: 310, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{YcGStKUUTlOGmOwgDWIssQ}{127.0.0.1}{127.0.0.1:36597}{cdfhimrsw}]}
+2021.11.28 00:40:58 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{YcGStKUUTlOGmOwgDWIssQ}{127.0.0.1}{127.0.0.1:36597}{cdfhimrsw}]}, term: 15, version: 310, reason: Publication{term=15, version=310}
+2021.11.28 00:40:58 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 00:40:58 INFO  es[][o.e.n.Node] started
+2021.11.28 00:40:58 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 00:41:01 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][4], [components][0], [metadatas][0]]]).
+2021.11.28 00:41:49 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 00:41:49 INFO  es[][o.e.n.Node] stopped
+2021.11.28 00:41:49 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 00:41:49 INFO  es[][o.e.n.Node] closed
+2021.11.28 00:43:15 INFO  es[][o.e.n.Node] version[7.13.4], pid[38], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 00:43:15 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 00:43:15 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 00:43:16 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 00:43:16 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 00:43:16 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 00:43:16 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 00:43:16 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 00:43:16 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 00:43:16 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 00:43:16 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 00:43:16 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 00:43:16 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 00:43:20 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 00:43:20 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 00:43:21 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 00:43:21 INFO  es[][o.e.n.Node] initialized
+2021.11.28 00:43:21 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 00:43:21 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:41667}, bound_addresses {127.0.0.1:41667}
+2021.11.28 00:43:22 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 00:43:22 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 00:43:22 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{Lhagqst8QrGvCnU8aupkUA}{127.0.0.1}{127.0.0.1:41667}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 16, version: 331, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{Lhagqst8QrGvCnU8aupkUA}{127.0.0.1}{127.0.0.1:41667}{cdfhimrsw}]}
+2021.11.28 00:43:22 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{Lhagqst8QrGvCnU8aupkUA}{127.0.0.1}{127.0.0.1:41667}{cdfhimrsw}]}, term: 16, version: 331, reason: Publication{term=16, version=331}
+2021.11.28 00:43:22 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 00:43:22 INFO  es[][o.e.n.Node] started
+2021.11.28 00:43:22 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 00:43:24 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][4], [components][0]]]).
+2021.11.28 00:43:39 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 00:43:39 INFO  es[][o.e.n.Node] stopped
+2021.11.28 00:43:39 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 00:43:39 INFO  es[][o.e.n.Node] closed
+2021.11.28 00:44:39 INFO  es[][o.e.n.Node] version[7.13.4], pid[38], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 00:44:39 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 00:44:39 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 00:44:40 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 00:44:40 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 00:44:40 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 00:44:40 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 00:44:40 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 00:44:40 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 00:44:40 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 00:44:40 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 00:44:40 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 00:44:40 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 00:44:43 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 00:44:43 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 00:44:44 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 00:44:44 INFO  es[][o.e.n.Node] initialized
+2021.11.28 00:44:44 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 00:44:44 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:34861}, bound_addresses {127.0.0.1:34861}
+2021.11.28 00:44:45 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 00:44:45 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 00:44:45 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{33YOtVqSRNuM23iTHPZYMQ}{127.0.0.1}{127.0.0.1:34861}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 17, version: 351, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{33YOtVqSRNuM23iTHPZYMQ}{127.0.0.1}{127.0.0.1:34861}{cdfhimrsw}]}
+2021.11.28 00:44:45 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{33YOtVqSRNuM23iTHPZYMQ}{127.0.0.1}{127.0.0.1:34861}{cdfhimrsw}]}, term: 17, version: 351, reason: Publication{term=17, version=351}
+2021.11.28 00:44:45 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 00:44:45 INFO  es[][o.e.n.Node] started
+2021.11.28 00:44:45 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 00:44:47 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][4], [components][3], [components][1]]]).
+2021.11.28 00:55:29 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 00:55:29 INFO  es[][o.e.n.Node] stopped
+2021.11.28 00:55:29 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 00:55:29 INFO  es[][o.e.n.Node] closed
+2021.11.28 00:56:08 INFO  es[][o.e.n.Node] version[7.13.4], pid[38], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 00:56:08 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 00:56:08 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 00:56:08 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 00:56:08 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 00:56:08 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 00:56:08 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 00:56:08 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 00:56:08 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 00:56:08 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 00:56:08 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 00:56:08 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 00:56:09 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 00:56:13 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 00:56:13 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 00:56:13 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 00:56:14 INFO  es[][o.e.n.Node] initialized
+2021.11.28 00:56:14 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 00:56:14 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:37367}, bound_addresses {127.0.0.1:37367}
+2021.11.28 00:56:15 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 00:56:15 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 00:56:15 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{V9GJnk2lRVGSP54MZD7Wtw}{127.0.0.1}{127.0.0.1:37367}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 18, version: 372, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{V9GJnk2lRVGSP54MZD7Wtw}{127.0.0.1}{127.0.0.1:37367}{cdfhimrsw}]}
+2021.11.28 00:56:15 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{V9GJnk2lRVGSP54MZD7Wtw}{127.0.0.1}{127.0.0.1:37367}{cdfhimrsw}]}, term: 18, version: 372, reason: Publication{term=18, version=372}
+2021.11.28 00:56:15 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 00:56:15 INFO  es[][o.e.n.Node] started
+2021.11.28 00:56:15 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 00:56:17 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][1], [components][0], [metadatas][0]]]).
+2021.11.28 00:56:32 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 00:56:32 INFO  es[][o.e.n.Node] stopped
+2021.11.28 00:56:32 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 00:56:32 INFO  es[][o.e.n.Node] closed
+2021.11.28 00:57:29 INFO  es[][o.e.n.Node] version[7.13.4], pid[38], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 00:57:29 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 00:57:29 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 00:57:30 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 00:57:30 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 00:57:30 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 00:57:30 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 00:57:30 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 00:57:30 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 00:57:30 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 00:57:30 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 00:57:30 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 00:57:30 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 00:57:34 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 00:57:34 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 00:57:34 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 00:57:35 INFO  es[][o.e.n.Node] initialized
+2021.11.28 00:57:35 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 00:57:35 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:40125}, bound_addresses {127.0.0.1:40125}
+2021.11.28 00:57:35 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 00:57:35 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 00:57:36 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{u6nuHuwXQuu0I3B32jir8g}{127.0.0.1}{127.0.0.1:40125}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 19, version: 391, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{u6nuHuwXQuu0I3B32jir8g}{127.0.0.1}{127.0.0.1:40125}{cdfhimrsw}]}
+2021.11.28 00:57:36 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{u6nuHuwXQuu0I3B32jir8g}{127.0.0.1}{127.0.0.1:40125}{cdfhimrsw}]}, term: 19, version: 391, reason: Publication{term=19, version=391}
+2021.11.28 00:57:36 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 00:57:36 INFO  es[][o.e.n.Node] started
+2021.11.28 00:57:36 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 00:57:38 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[metadatas][0], [components][2], [components][3]]]).
+2021.11.28 00:58:59 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 00:58:59 INFO  es[][o.e.n.Node] stopped
+2021.11.28 00:58:59 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 00:58:59 INFO  es[][o.e.n.Node] closed
+2021.11.28 00:59:46 INFO  es[][o.e.n.Node] version[7.13.4], pid[38], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 00:59:46 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 00:59:46 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 00:59:47 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 00:59:47 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 00:59:47 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 00:59:47 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 00:59:47 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 00:59:47 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 00:59:47 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 00:59:47 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 00:59:47 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 00:59:47 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 00:59:51 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 00:59:51 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 00:59:52 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 00:59:52 INFO  es[][o.e.n.Node] initialized
+2021.11.28 00:59:52 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 00:59:52 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:42243}, bound_addresses {127.0.0.1:42243}
+2021.11.28 00:59:53 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 00:59:53 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 00:59:53 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{Qud210Z7QKWAY7HixyWb1A}{127.0.0.1}{127.0.0.1:42243}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 20, version: 412, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{Qud210Z7QKWAY7HixyWb1A}{127.0.0.1}{127.0.0.1:42243}{cdfhimrsw}]}
+2021.11.28 00:59:53 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{Qud210Z7QKWAY7HixyWb1A}{127.0.0.1}{127.0.0.1:42243}{cdfhimrsw}]}, term: 20, version: 412, reason: Publication{term=20, version=412}
+2021.11.28 00:59:53 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 00:59:53 INFO  es[][o.e.n.Node] started
+2021.11.28 00:59:53 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 00:59:55 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][0], [metadatas][0]]]).
+2021.11.28 01:03:29 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 01:03:29 INFO  es[][o.e.n.Node] stopped
+2021.11.28 01:03:29 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 01:03:29 INFO  es[][o.e.n.Node] closed
+2021.11.28 01:03:45 INFO  es[][o.e.n.Node] version[7.13.4], pid[38], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 01:03:45 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 01:03:45 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 01:03:46 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 01:03:46 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 01:03:46 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 01:03:46 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 01:03:46 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 01:03:46 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 01:03:46 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 01:03:46 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 01:03:46 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 01:03:46 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 01:03:51 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 01:03:51 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 01:03:51 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 01:03:52 INFO  es[][o.e.n.Node] initialized
+2021.11.28 01:03:52 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 01:03:52 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:46095}, bound_addresses {127.0.0.1:46095}
+2021.11.28 01:03:52 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 01:03:52 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 01:03:53 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{IzNXuzcJSdaeXkJp-CjIbQ}{127.0.0.1}{127.0.0.1:46095}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 21, version: 433, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{IzNXuzcJSdaeXkJp-CjIbQ}{127.0.0.1}{127.0.0.1:46095}{cdfhimrsw}]}
+2021.11.28 01:03:53 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{IzNXuzcJSdaeXkJp-CjIbQ}{127.0.0.1}{127.0.0.1:46095}{cdfhimrsw}]}, term: 21, version: 433, reason: Publication{term=21, version=433}
+2021.11.28 01:03:53 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 01:03:53 INFO  es[][o.e.n.Node] started
+2021.11.28 01:03:53 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 01:03:55 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[metadatas][0], [components][4], [components][0]]]).
+2021.11.28 01:04:45 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 01:04:45 INFO  es[][o.e.n.Node] stopped
+2021.11.28 01:04:45 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 01:04:45 INFO  es[][o.e.n.Node] closed
+2021.11.28 01:05:00 INFO  es[][o.e.n.Node] version[7.13.4], pid[39], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 01:05:00 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 01:05:00 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 01:05:01 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 01:05:01 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 01:05:01 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 01:05:01 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 01:05:01 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 01:05:01 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 01:05:01 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 01:05:01 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 01:05:01 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 01:05:01 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 01:05:05 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 01:05:05 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 01:05:06 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 01:05:06 INFO  es[][o.e.n.Node] initialized
+2021.11.28 01:05:06 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 01:05:07 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:41165}, bound_addresses {127.0.0.1:41165}
+2021.11.28 01:05:07 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 01:05:07 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 01:05:07 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{I7kg8eKjR9SWB2G_wa6AlQ}{127.0.0.1}{127.0.0.1:41165}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 22, version: 453, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{I7kg8eKjR9SWB2G_wa6AlQ}{127.0.0.1}{127.0.0.1:41165}{cdfhimrsw}]}
+2021.11.28 01:05:07 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{I7kg8eKjR9SWB2G_wa6AlQ}{127.0.0.1}{127.0.0.1:41165}{cdfhimrsw}]}, term: 22, version: 453, reason: Publication{term=22, version=453}
+2021.11.28 01:05:07 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 01:05:07 INFO  es[][o.e.n.Node] started
+2021.11.28 01:05:08 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 01:05:10 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][0], [metadatas][0]]]).
+2021.11.28 01:06:07 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 01:06:07 INFO  es[][o.e.n.Node] stopped
+2021.11.28 01:06:07 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 01:06:07 INFO  es[][o.e.n.Node] closed
+2021.11.28 01:06:24 INFO  es[][o.e.n.Node] version[7.13.4], pid[39], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 01:06:24 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 01:06:24 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 01:06:25 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 01:06:25 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 01:06:25 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 01:06:25 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 01:06:25 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 01:06:25 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 01:06:25 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 01:06:25 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 01:06:25 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 01:06:25 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 01:06:29 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 01:06:29 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 01:06:29 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 01:06:30 INFO  es[][o.e.n.Node] initialized
+2021.11.28 01:06:30 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 01:06:30 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:44187}, bound_addresses {127.0.0.1:44187}
+2021.11.28 01:06:31 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 01:06:31 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 01:06:31 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{TOLdzuIyQlienaBY-ka_xg}{127.0.0.1}{127.0.0.1:44187}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 23, version: 474, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{TOLdzuIyQlienaBY-ka_xg}{127.0.0.1}{127.0.0.1:44187}{cdfhimrsw}]}
+2021.11.28 01:06:31 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{TOLdzuIyQlienaBY-ka_xg}{127.0.0.1}{127.0.0.1:44187}{cdfhimrsw}]}, term: 23, version: 474, reason: Publication{term=23, version=474}
+2021.11.28 01:06:31 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 01:06:31 INFO  es[][o.e.n.Node] started
+2021.11.28 01:06:31 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 01:06:33 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][2], [components][1], [metadatas][0]]]).
+2021.11.28 01:09:25 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 01:09:25 INFO  es[][o.e.n.Node] stopped
+2021.11.28 01:09:25 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 01:09:25 INFO  es[][o.e.n.Node] closed
+2021.11.28 01:09:41 INFO  es[][o.e.n.Node] version[7.13.4], pid[38], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 01:09:41 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 01:09:41 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 01:09:41 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 01:09:41 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 01:09:41 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 01:09:41 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 01:09:41 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 01:09:41 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 01:09:41 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 01:09:41 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 01:09:41 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 01:09:42 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 01:09:46 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 01:09:46 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 01:09:46 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 01:09:47 INFO  es[][o.e.n.Node] initialized
+2021.11.28 01:09:47 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 01:09:47 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:33859}, bound_addresses {127.0.0.1:33859}
+2021.11.28 01:09:47 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 01:09:47 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 01:09:47 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{zK4W7bgcQ6uZgsxNhNKBuw}{127.0.0.1}{127.0.0.1:33859}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 24, version: 495, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{zK4W7bgcQ6uZgsxNhNKBuw}{127.0.0.1}{127.0.0.1:33859}{cdfhimrsw}]}
+2021.11.28 01:09:48 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{zK4W7bgcQ6uZgsxNhNKBuw}{127.0.0.1}{127.0.0.1:33859}{cdfhimrsw}]}, term: 24, version: 495, reason: Publication{term=24, version=495}
+2021.11.28 01:09:48 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 01:09:48 INFO  es[][o.e.n.Node] started
+2021.11.28 01:09:48 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 01:09:50 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][2], [components][3], [components][0]]]).
+2021.11.28 01:10:18 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 01:10:18 INFO  es[][o.e.n.Node] stopped
+2021.11.28 01:10:18 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 01:10:18 INFO  es[][o.e.n.Node] closed
+2021.11.28 01:10:49 INFO  es[][o.e.n.Node] version[7.13.4], pid[38], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 01:10:49 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 01:10:49 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 01:10:50 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 01:10:50 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 01:10:50 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 01:10:50 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 01:10:50 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 01:10:50 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 01:10:50 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 01:10:50 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 01:10:50 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 01:10:50 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 01:10:54 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 01:10:54 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 01:10:55 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 01:10:55 INFO  es[][o.e.n.Node] initialized
+2021.11.28 01:10:55 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 01:10:55 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:39383}, bound_addresses {127.0.0.1:39383}
+2021.11.28 01:10:56 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 01:10:56 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 01:10:56 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{1x-AHVV0TaeZJMW__dl8Jg}{127.0.0.1}{127.0.0.1:39383}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 25, version: 516, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{1x-AHVV0TaeZJMW__dl8Jg}{127.0.0.1}{127.0.0.1:39383}{cdfhimrsw}]}
+2021.11.28 01:10:56 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{1x-AHVV0TaeZJMW__dl8Jg}{127.0.0.1}{127.0.0.1:39383}{cdfhimrsw}]}, term: 25, version: 516, reason: Publication{term=25, version=516}
+2021.11.28 01:10:56 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 01:10:56 INFO  es[][o.e.n.Node] started
+2021.11.28 01:10:56 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 01:10:58 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][0], [metadatas][0]]]).
+2021.11.28 01:11:22 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 01:11:22 INFO  es[][o.e.n.Node] stopped
+2021.11.28 01:11:22 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 01:11:22 INFO  es[][o.e.n.Node] closed
+2021.11.28 01:11:31 INFO  es[][o.e.n.Node] version[7.13.4], pid[39], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 01:11:31 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 01:11:31 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 01:11:32 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 01:11:32 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 01:11:32 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 01:11:32 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 01:11:32 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 01:11:32 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 01:11:32 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 01:11:32 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 01:11:32 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 01:11:32 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 01:11:37 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 01:11:37 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 01:11:38 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 01:11:38 INFO  es[][o.e.n.Node] initialized
+2021.11.28 01:11:38 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 01:11:39 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:41023}, bound_addresses {127.0.0.1:41023}
+2021.11.28 01:11:39 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 01:11:39 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 01:11:40 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{Cd-Zr8X2SziUttGlsxJapQ}{127.0.0.1}{127.0.0.1:41023}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 26, version: 537, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{Cd-Zr8X2SziUttGlsxJapQ}{127.0.0.1}{127.0.0.1:41023}{cdfhimrsw}]}
+2021.11.28 01:11:40 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{Cd-Zr8X2SziUttGlsxJapQ}{127.0.0.1}{127.0.0.1:41023}{cdfhimrsw}]}, term: 26, version: 537, reason: Publication{term=26, version=537}
+2021.11.28 01:11:40 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 01:11:40 INFO  es[][o.e.n.Node] started
+2021.11.28 01:11:40 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 01:11:43 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[metadatas][0], [components][1], [components][2]]]).
+2021.11.28 01:12:22 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 01:12:22 INFO  es[][o.e.n.Node] stopped
+2021.11.28 01:12:22 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 01:12:22 INFO  es[][o.e.n.Node] closed
+2021.11.28 01:12:42 INFO  es[][o.e.n.Node] version[7.13.4], pid[38], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 01:12:42 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 01:12:42 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 01:12:43 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 01:12:43 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 01:12:43 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 01:12:43 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 01:12:43 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 01:12:43 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 01:12:43 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 01:12:43 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 01:12:43 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 01:12:43 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 01:12:47 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 01:12:47 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 01:12:47 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 01:12:48 INFO  es[][o.e.n.Node] initialized
+2021.11.28 01:12:48 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 01:12:48 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:38117}, bound_addresses {127.0.0.1:38117}
+2021.11.28 01:12:49 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 01:12:49 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 01:12:49 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{hfF_YXHBQNSHunFSvArX_A}{127.0.0.1}{127.0.0.1:38117}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 27, version: 558, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{hfF_YXHBQNSHunFSvArX_A}{127.0.0.1}{127.0.0.1:38117}{cdfhimrsw}]}
+2021.11.28 01:12:49 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{hfF_YXHBQNSHunFSvArX_A}{127.0.0.1}{127.0.0.1:38117}{cdfhimrsw}]}, term: 27, version: 558, reason: Publication{term=27, version=558}
+2021.11.28 01:12:49 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 01:12:49 INFO  es[][o.e.n.Node] started
+2021.11.28 01:12:49 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 01:12:52 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[metadatas][0]]]).
+2021.11.28 01:13:36 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 01:13:36 INFO  es[][o.e.n.Node] stopped
+2021.11.28 01:13:36 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 01:13:36 INFO  es[][o.e.n.Node] closed
+2021.11.28 01:15:10 INFO  es[][o.e.n.Node] version[7.13.4], pid[38], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 01:15:10 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 01:15:10 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 01:15:11 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 01:15:11 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 01:15:11 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 01:15:11 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 01:15:11 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 01:15:11 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 01:15:11 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 01:15:11 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 01:15:11 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 01:15:11 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 01:15:15 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 01:15:15 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 01:15:16 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 01:15:16 INFO  es[][o.e.n.Node] initialized
+2021.11.28 01:15:16 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 01:15:16 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:39643}, bound_addresses {127.0.0.1:39643}
+2021.11.28 01:15:17 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 01:15:17 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 01:15:17 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{NCdL73imSAiWe1IJYl-d7g}{127.0.0.1}{127.0.0.1:39643}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 28, version: 580, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{NCdL73imSAiWe1IJYl-d7g}{127.0.0.1}{127.0.0.1:39643}{cdfhimrsw}]}
+2021.11.28 01:15:17 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{NCdL73imSAiWe1IJYl-d7g}{127.0.0.1}{127.0.0.1:39643}{cdfhimrsw}]}, term: 28, version: 580, reason: Publication{term=28, version=580}
+2021.11.28 01:15:17 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 01:15:17 INFO  es[][o.e.n.Node] started
+2021.11.28 01:15:17 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 01:15:19 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][3], [components][0]]]).
+2021.11.28 01:28:44 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 01:28:44 INFO  es[][o.e.n.Node] stopped
+2021.11.28 01:28:44 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 01:28:44 INFO  es[][o.e.n.Node] closed
+2021.11.28 01:29:05 INFO  es[][o.e.n.Node] version[7.13.4], pid[38], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 01:29:05 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 01:29:05 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 01:29:05 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 01:29:05 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 01:29:05 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 01:29:05 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 01:29:05 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 01:29:05 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 01:29:05 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 01:29:05 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 01:29:05 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 01:29:06 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 01:29:10 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 01:29:10 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 01:29:10 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 01:29:11 INFO  es[][o.e.n.Node] initialized
+2021.11.28 01:29:11 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 01:29:11 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:39253}, bound_addresses {127.0.0.1:39253}
+2021.11.28 01:29:11 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 01:29:11 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 01:29:11 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{so5j_m0XSsybzfbGJeSEcg}{127.0.0.1}{127.0.0.1:39253}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 29, version: 601, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{so5j_m0XSsybzfbGJeSEcg}{127.0.0.1}{127.0.0.1:39253}{cdfhimrsw}]}
+2021.11.28 01:29:12 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{so5j_m0XSsybzfbGJeSEcg}{127.0.0.1}{127.0.0.1:39253}{cdfhimrsw}]}, term: 29, version: 601, reason: Publication{term=29, version=601}
+2021.11.28 01:29:12 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 01:29:12 INFO  es[][o.e.n.Node] started
+2021.11.28 01:29:12 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 01:29:14 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][1], [components][2], [metadatas][0]]]).
+2021.11.28 01:31:39 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 01:31:39 INFO  es[][o.e.n.Node] stopped
+2021.11.28 01:31:39 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 01:31:39 INFO  es[][o.e.n.Node] closed
+2021.11.28 01:48:26 INFO  es[][o.e.n.Node] version[7.13.4], pid[39], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 01:48:26 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 01:48:26 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 01:48:27 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 01:48:27 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 01:48:27 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 01:48:27 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 01:48:27 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 01:48:27 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 01:48:27 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 01:48:27 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [232.9gb], net total_space [250.9gb], types [ext4]
+2021.11.28 01:48:27 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 01:48:27 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 01:48:31 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 01:48:31 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 01:48:31 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 01:48:32 INFO  es[][o.e.n.Node] initialized
+2021.11.28 01:48:32 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 01:48:32 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:36881}, bound_addresses {127.0.0.1:36881}
+2021.11.28 01:48:33 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 01:48:33 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 01:48:33 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{PN1PihMLRbGV-y1M4mi4Rw}{127.0.0.1}{127.0.0.1:36881}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 30, version: 622, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{PN1PihMLRbGV-y1M4mi4Rw}{127.0.0.1}{127.0.0.1:36881}{cdfhimrsw}]}
+2021.11.28 01:48:33 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{PN1PihMLRbGV-y1M4mi4Rw}{127.0.0.1}{127.0.0.1:36881}{cdfhimrsw}]}, term: 30, version: 622, reason: Publication{term=30, version=622}
+2021.11.28 01:48:33 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 01:48:33 INFO  es[][o.e.n.Node] started
+2021.11.28 01:48:33 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 01:48:35 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][3], [components][1], [metadatas][0]]]).
+2021.11.28 01:50:16 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 01:50:16 INFO  es[][o.e.n.Node] stopped
+2021.11.28 01:50:16 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 01:50:16 INFO  es[][o.e.n.Node] closed
+2021.11.28 02:01:10 INFO  es[][o.e.n.Node] version[7.13.4], pid[38], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 02:01:10 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 02:01:10 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 02:01:11 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 02:01:11 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 02:01:11 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 02:01:11 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 02:01:11 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 02:01:11 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 02:01:11 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 02:01:11 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 02:01:11 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 02:01:11 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 02:01:15 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 02:01:15 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 02:01:15 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 02:01:16 INFO  es[][o.e.n.Node] initialized
+2021.11.28 02:01:16 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 02:01:16 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:33159}, bound_addresses {127.0.0.1:33159}
+2021.11.28 02:01:17 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 02:01:17 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 02:01:17 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{j2z16LFrRi6e2usgpfhHDA}{127.0.0.1}{127.0.0.1:33159}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 31, version: 642, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{j2z16LFrRi6e2usgpfhHDA}{127.0.0.1}{127.0.0.1:33159}{cdfhimrsw}]}
+2021.11.28 02:01:17 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{j2z16LFrRi6e2usgpfhHDA}{127.0.0.1}{127.0.0.1:33159}{cdfhimrsw}]}, term: 31, version: 642, reason: Publication{term=31, version=642}
+2021.11.28 02:01:17 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 02:01:17 INFO  es[][o.e.n.Node] started
+2021.11.28 02:01:17 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 02:01:19 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[metadatas][0], [components][1], [components][0]]]).
+2021.11.28 02:03:35 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 02:03:35 INFO  es[][o.e.n.Node] stopped
+2021.11.28 02:03:35 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 02:03:35 INFO  es[][o.e.n.Node] closed
+2021.11.28 02:05:43 INFO  es[][o.e.n.Node] version[7.13.4], pid[38], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 02:05:43 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 02:05:43 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 02:05:44 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 02:05:44 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 02:05:44 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 02:05:44 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 02:05:44 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 02:05:44 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 02:05:44 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 02:05:44 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 02:05:44 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 02:05:44 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 02:05:48 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 02:05:48 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 02:05:48 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 02:05:49 INFO  es[][o.e.n.Node] initialized
+2021.11.28 02:05:49 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 02:05:49 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:46801}, bound_addresses {127.0.0.1:46801}
+2021.11.28 02:05:49 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 02:05:49 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 02:05:50 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{sT6sFkI6QcKOHsrxNRYt_g}{127.0.0.1}{127.0.0.1:46801}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 32, version: 662, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{sT6sFkI6QcKOHsrxNRYt_g}{127.0.0.1}{127.0.0.1:46801}{cdfhimrsw}]}
+2021.11.28 02:05:50 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{sT6sFkI6QcKOHsrxNRYt_g}{127.0.0.1}{127.0.0.1:46801}{cdfhimrsw}]}, term: 32, version: 662, reason: Publication{term=32, version=662}
+2021.11.28 02:05:50 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 02:05:50 INFO  es[][o.e.n.Node] started
+2021.11.28 02:05:50 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 02:05:52 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][3], [components][0], [metadatas][0]]]).
+2021.11.28 02:06:20 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 02:06:20 INFO  es[][o.e.n.Node] stopped
+2021.11.28 02:06:20 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 02:06:20 INFO  es[][o.e.n.Node] closed
+2021.11.28 02:06:32 INFO  es[][o.e.n.Node] version[7.13.4], pid[39], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 02:06:32 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 02:06:32 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 02:06:32 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 02:06:32 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 02:06:32 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 02:06:32 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 02:06:32 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 02:06:32 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 02:06:32 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 02:06:32 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 02:06:32 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 02:06:32 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 02:06:37 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 02:06:37 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 02:06:37 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 02:06:38 INFO  es[][o.e.n.Node] initialized
+2021.11.28 02:06:38 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 02:06:38 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:35069}, bound_addresses {127.0.0.1:35069}
+2021.11.28 02:06:38 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 02:06:38 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 02:06:38 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{gBgtkuZ7RAS1e7YluHuRKQ}{127.0.0.1}{127.0.0.1:35069}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 33, version: 683, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{gBgtkuZ7RAS1e7YluHuRKQ}{127.0.0.1}{127.0.0.1:35069}{cdfhimrsw}]}
+2021.11.28 02:06:39 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{gBgtkuZ7RAS1e7YluHuRKQ}{127.0.0.1}{127.0.0.1:35069}{cdfhimrsw}]}, term: 33, version: 683, reason: Publication{term=33, version=683}
+2021.11.28 02:06:39 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 02:06:39 INFO  es[][o.e.n.Node] started
+2021.11.28 02:06:39 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 02:06:41 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][3], [components][0], [metadatas][0]]]).
+2021.11.28 02:07:06 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 02:07:06 INFO  es[][o.e.n.Node] stopped
+2021.11.28 02:07:06 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 02:07:06 INFO  es[][o.e.n.Node] closed
+2021.11.28 02:07:28 INFO  es[][o.e.n.Node] version[7.13.4], pid[39], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 02:07:28 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 02:07:28 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 02:07:28 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 02:07:28 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 02:07:28 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 02:07:28 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 02:07:28 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 02:07:28 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 02:07:28 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 02:07:28 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 02:07:28 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 02:07:28 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 02:07:33 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 02:07:33 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 02:07:33 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 02:07:33 INFO  es[][o.e.n.Node] initialized
+2021.11.28 02:07:33 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 02:07:34 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:35679}, bound_addresses {127.0.0.1:35679}
+2021.11.28 02:07:34 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 02:07:34 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 02:07:34 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{9rmmbqTqSteAEBn6OnuT0g}{127.0.0.1}{127.0.0.1:35679}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 34, version: 704, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{9rmmbqTqSteAEBn6OnuT0g}{127.0.0.1}{127.0.0.1:35679}{cdfhimrsw}]}
+2021.11.28 02:07:35 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{9rmmbqTqSteAEBn6OnuT0g}{127.0.0.1}{127.0.0.1:35679}{cdfhimrsw}]}, term: 34, version: 704, reason: Publication{term=34, version=704}
+2021.11.28 02:07:35 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 02:07:35 INFO  es[][o.e.n.Node] started
+2021.11.28 02:07:35 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 02:07:37 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][0], [metadatas][0]]]).
+2021.11.28 02:15:57 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 02:15:57 INFO  es[][o.e.n.Node] stopped
+2021.11.28 02:15:57 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 02:15:57 INFO  es[][o.e.n.Node] closed
+2021.11.28 02:16:16 INFO  es[][o.e.n.Node] version[7.13.4], pid[39], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 02:16:16 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 02:16:16 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 02:16:17 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 02:16:17 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 02:16:17 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 02:16:17 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 02:16:17 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 02:16:17 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 02:16:17 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 02:16:17 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 02:16:17 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 02:16:17 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 02:16:21 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 02:16:21 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 02:16:22 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 02:16:22 INFO  es[][o.e.n.Node] initialized
+2021.11.28 02:16:22 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 02:16:22 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:36627}, bound_addresses {127.0.0.1:36627}
+2021.11.28 02:16:23 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 02:16:23 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 02:16:23 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{E6xJfZkNRRSbYWXPNu5u6A}{127.0.0.1}{127.0.0.1:36627}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 35, version: 725, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{E6xJfZkNRRSbYWXPNu5u6A}{127.0.0.1}{127.0.0.1:36627}{cdfhimrsw}]}
+2021.11.28 02:16:23 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{E6xJfZkNRRSbYWXPNu5u6A}{127.0.0.1}{127.0.0.1:36627}{cdfhimrsw}]}, term: 35, version: 725, reason: Publication{term=35, version=725}
+2021.11.28 02:16:23 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 02:16:23 INFO  es[][o.e.n.Node] started
+2021.11.28 02:16:23 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 02:16:26 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[metadatas][0], [components][3], [components][1]]]).
+2021.11.28 02:17:57 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 02:17:57 INFO  es[][o.e.n.Node] stopped
+2021.11.28 02:17:57 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 02:17:57 INFO  es[][o.e.n.Node] closed
+2021.11.28 02:18:48 INFO  es[][o.e.n.Node] version[7.13.4], pid[39], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 02:18:48 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 02:18:48 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 02:18:48 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 02:18:48 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 02:18:48 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 02:18:48 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 02:18:48 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 02:18:48 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 02:18:48 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 02:18:49 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 02:18:49 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 02:18:49 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 02:18:53 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 02:18:53 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 02:18:53 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 02:18:53 INFO  es[][o.e.n.Node] initialized
+2021.11.28 02:18:53 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 02:18:54 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:46155}, bound_addresses {127.0.0.1:46155}
+2021.11.28 02:18:54 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 02:18:54 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 02:18:54 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{zS167OveSlmd6iln3vO6Nw}{127.0.0.1}{127.0.0.1:46155}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 36, version: 746, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{zS167OveSlmd6iln3vO6Nw}{127.0.0.1}{127.0.0.1:46155}{cdfhimrsw}]}
+2021.11.28 02:18:54 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{zS167OveSlmd6iln3vO6Nw}{127.0.0.1}{127.0.0.1:46155}{cdfhimrsw}]}, term: 36, version: 746, reason: Publication{term=36, version=746}
+2021.11.28 02:18:54 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 02:18:54 INFO  es[][o.e.n.Node] started
+2021.11.28 02:18:55 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 02:18:57 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][2], [metadatas][0]]]).
+2021.11.28 02:21:36 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 02:21:36 INFO  es[][o.e.n.Node] stopped
+2021.11.28 02:21:36 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 02:21:36 INFO  es[][o.e.n.Node] closed
+2021.11.28 02:47:43 INFO  es[][o.e.n.Node] version[7.13.4], pid[39], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 02:47:43 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 02:47:43 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 02:47:43 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 02:47:43 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 02:47:43 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 02:47:43 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 02:47:43 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 02:47:43 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 02:47:43 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 02:47:43 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 02:47:43 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 02:47:44 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 02:47:48 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 02:47:48 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 02:47:48 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 02:47:48 INFO  es[][o.e.n.Node] initialized
+2021.11.28 02:47:48 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 02:47:49 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:46641}, bound_addresses {127.0.0.1:46641}
+2021.11.28 02:47:49 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 02:47:49 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 02:47:49 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{x_Xfe6eWSlKXBernIpwZ7A}{127.0.0.1}{127.0.0.1:46641}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 37, version: 767, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{x_Xfe6eWSlKXBernIpwZ7A}{127.0.0.1}{127.0.0.1:46641}{cdfhimrsw}]}
+2021.11.28 02:47:49 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{x_Xfe6eWSlKXBernIpwZ7A}{127.0.0.1}{127.0.0.1:46641}{cdfhimrsw}]}, term: 37, version: 767, reason: Publication{term=37, version=767}
+2021.11.28 02:47:49 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 02:47:49 INFO  es[][o.e.n.Node] started
+2021.11.28 02:47:50 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 02:47:52 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][3], [components][4], [components][1]]]).
+2021.11.28 02:55:32 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 02:55:32 INFO  es[][o.e.n.Node] stopped
+2021.11.28 02:55:32 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 02:55:32 INFO  es[][o.e.n.Node] closed
+2021.11.28 02:55:47 INFO  es[][o.e.n.Node] version[7.13.4], pid[38], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 02:55:47 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 02:55:47 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 02:55:48 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 02:55:48 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 02:55:48 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 02:55:48 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 02:55:48 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 02:55:48 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 02:55:48 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 02:55:48 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 02:55:48 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 02:55:48 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 02:55:52 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 02:55:52 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 02:55:53 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 02:55:53 INFO  es[][o.e.n.Node] initialized
+2021.11.28 02:55:53 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 02:55:53 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:40165}, bound_addresses {127.0.0.1:40165}
+2021.11.28 02:55:54 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 02:55:54 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 02:55:54 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{Yc-hHSs1Qem3KjI42ja8Kw}{127.0.0.1}{127.0.0.1:40165}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 38, version: 788, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{Yc-hHSs1Qem3KjI42ja8Kw}{127.0.0.1}{127.0.0.1:40165}{cdfhimrsw}]}
+2021.11.28 02:55:54 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{Yc-hHSs1Qem3KjI42ja8Kw}{127.0.0.1}{127.0.0.1:40165}{cdfhimrsw}]}, term: 38, version: 788, reason: Publication{term=38, version=788}
+2021.11.28 02:55:54 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 02:55:54 INFO  es[][o.e.n.Node] started
+2021.11.28 02:55:55 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 02:55:57 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][0], [metadatas][0]]]).
+2021.11.28 03:06:14 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 03:06:14 INFO  es[][o.e.n.Node] stopped
+2021.11.28 03:06:14 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 03:06:14 INFO  es[][o.e.n.Node] closed
+2021.11.28 03:07:17 INFO  es[][o.e.n.Node] version[7.13.4], pid[38], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 03:07:17 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 03:07:17 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 03:07:17 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 03:07:17 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 03:07:17 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 03:07:17 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 03:07:17 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 03:07:17 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 03:07:17 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 03:07:17 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 03:07:17 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 03:07:18 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 03:07:22 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 03:07:22 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 03:07:22 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 03:07:22 INFO  es[][o.e.n.Node] initialized
+2021.11.28 03:07:22 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 03:07:22 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:34903}, bound_addresses {127.0.0.1:34903}
+2021.11.28 03:07:23 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 03:07:23 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 03:07:23 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{0SwXy4IbR9iXmQ9xup_T0Q}{127.0.0.1}{127.0.0.1:34903}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 39, version: 808, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{0SwXy4IbR9iXmQ9xup_T0Q}{127.0.0.1}{127.0.0.1:34903}{cdfhimrsw}]}
+2021.11.28 03:07:23 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{0SwXy4IbR9iXmQ9xup_T0Q}{127.0.0.1}{127.0.0.1:34903}{cdfhimrsw}]}, term: 39, version: 808, reason: Publication{term=39, version=808}
+2021.11.28 03:07:23 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 03:07:23 INFO  es[][o.e.n.Node] started
+2021.11.28 03:07:24 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 03:07:25 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][0], [metadatas][0]]]).
+2021.11.28 03:10:55 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 03:10:56 INFO  es[][o.e.n.Node] stopped
+2021.11.28 03:10:56 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 03:10:56 INFO  es[][o.e.n.Node] closed
+2021.11.28 03:11:09 INFO  es[][o.e.n.Node] version[7.13.4], pid[39], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 03:11:09 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 03:11:09 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 03:11:09 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 03:11:09 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 03:11:09 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 03:11:09 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 03:11:09 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 03:11:09 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 03:11:09 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 03:11:09 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 03:11:09 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 03:11:10 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 03:11:13 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 03:11:14 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 03:11:14 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 03:11:14 INFO  es[][o.e.n.Node] initialized
+2021.11.28 03:11:14 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 03:11:14 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:46525}, bound_addresses {127.0.0.1:46525}
+2021.11.28 03:11:15 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 03:11:15 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 03:11:15 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{CxMuRGUkQK2NwEtCmZ8VSQ}{127.0.0.1}{127.0.0.1:46525}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 40, version: 828, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{CxMuRGUkQK2NwEtCmZ8VSQ}{127.0.0.1}{127.0.0.1:46525}{cdfhimrsw}]}
+2021.11.28 03:11:15 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{CxMuRGUkQK2NwEtCmZ8VSQ}{127.0.0.1}{127.0.0.1:46525}{cdfhimrsw}]}, term: 40, version: 828, reason: Publication{term=40, version=828}
+2021.11.28 03:11:15 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 03:11:15 INFO  es[][o.e.n.Node] started
+2021.11.28 03:11:16 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 03:11:18 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[metadatas][0]]]).
+2021.11.28 03:12:04 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 03:12:04 INFO  es[][o.e.n.Node] stopped
+2021.11.28 03:12:04 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 03:12:04 INFO  es[][o.e.n.Node] closed
+2021.11.28 03:12:25 INFO  es[][o.e.n.Node] version[7.13.4], pid[38], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 03:12:25 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 03:12:25 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 03:12:25 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 03:12:25 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 03:12:25 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 03:12:25 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 03:12:25 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 03:12:25 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 03:12:25 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 03:12:25 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 03:12:25 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 03:12:26 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 03:12:29 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 03:12:29 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 03:12:30 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 03:12:30 INFO  es[][o.e.n.Node] initialized
+2021.11.28 03:12:30 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 03:12:30 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:43811}, bound_addresses {127.0.0.1:43811}
+2021.11.28 03:12:31 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 03:12:31 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 03:12:31 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{cGa0JUFbQ6ug1FH3jMZWHA}{127.0.0.1}{127.0.0.1:43811}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 41, version: 850, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{cGa0JUFbQ6ug1FH3jMZWHA}{127.0.0.1}{127.0.0.1:43811}{cdfhimrsw}]}
+2021.11.28 03:12:31 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{cGa0JUFbQ6ug1FH3jMZWHA}{127.0.0.1}{127.0.0.1:43811}{cdfhimrsw}]}, term: 41, version: 850, reason: Publication{term=41, version=850}
+2021.11.28 03:12:31 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 03:12:31 INFO  es[][o.e.n.Node] started
+2021.11.28 03:12:31 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 03:12:33 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[metadatas][0], [components][1], [components][4]]]).
+2021.11.28 23:15:43 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 23:15:43 INFO  es[][o.e.n.Node] stopped
+2021.11.28 23:15:43 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 23:15:43 INFO  es[][o.e.n.Node] closed
+2021.11.28 23:16:33 INFO  es[][o.e.n.Node] version[7.13.4], pid[39], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 23:16:33 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 23:16:33 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 23:16:34 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 23:16:34 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 23:16:34 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 23:16:34 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 23:16:34 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 23:16:34 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 23:16:34 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 23:16:34 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 23:16:34 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 23:16:34 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 23:16:37 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 23:16:37 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 23:16:37 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 23:16:37 INFO  es[][o.e.n.Node] initialized
+2021.11.28 23:16:37 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 23:16:37 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:42497}, bound_addresses {127.0.0.1:42497}
+2021.11.28 23:16:38 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 23:16:38 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 23:16:38 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{x33XVk_QTj6MDg9LTHzmxA}{127.0.0.1}{127.0.0.1:42497}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 42, version: 870, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{x33XVk_QTj6MDg9LTHzmxA}{127.0.0.1}{127.0.0.1:42497}{cdfhimrsw}]}
+2021.11.28 23:16:38 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{x33XVk_QTj6MDg9LTHzmxA}{127.0.0.1}{127.0.0.1:42497}{cdfhimrsw}]}, term: 42, version: 870, reason: Publication{term=42, version=870}
+2021.11.28 23:16:38 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 23:16:38 INFO  es[][o.e.n.Node] started
+2021.11.28 23:16:38 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 23:16:40 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][4], [components][0], [metadatas][0]]]).
+2021.11.28 23:17:58 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 23:17:58 INFO  es[][o.e.n.Node] stopped
+2021.11.28 23:17:58 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 23:17:58 INFO  es[][o.e.n.Node] closed
+2021.11.28 23:18:30 INFO  es[][o.e.n.Node] version[7.13.4], pid[39], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 23:18:30 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 23:18:30 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 23:18:31 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 23:18:31 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 23:18:31 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 23:18:31 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 23:18:31 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 23:18:31 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 23:18:31 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 23:18:31 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 23:18:31 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 23:18:31 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 23:18:34 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 23:18:34 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 23:18:34 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 23:18:34 INFO  es[][o.e.n.Node] initialized
+2021.11.28 23:18:34 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 23:18:34 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:44815}, bound_addresses {127.0.0.1:44815}
+2021.11.28 23:18:35 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 23:18:35 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 23:18:35 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{IA3XPbCbSgy11Qnk62r4nA}{127.0.0.1}{127.0.0.1:44815}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 43, version: 891, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{IA3XPbCbSgy11Qnk62r4nA}{127.0.0.1}{127.0.0.1:44815}{cdfhimrsw}]}
+2021.11.28 23:18:35 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{IA3XPbCbSgy11Qnk62r4nA}{127.0.0.1}{127.0.0.1:44815}{cdfhimrsw}]}, term: 43, version: 891, reason: Publication{term=43, version=891}
+2021.11.28 23:18:35 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 23:18:35 INFO  es[][o.e.n.Node] started
+2021.11.28 23:18:35 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 23:18:37 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[metadatas][0], [components][1], [components][2]]]).
+2021.11.28 23:24:12 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 23:24:12 INFO  es[][o.e.n.Node] stopped
+2021.11.28 23:24:12 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 23:24:12 INFO  es[][o.e.n.Node] closed
+2021.11.28 23:24:35 INFO  es[][o.e.n.Node] version[7.13.4], pid[39], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 23:24:35 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 23:24:35 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 23:24:36 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 23:24:36 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 23:24:36 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 23:24:36 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 23:24:36 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 23:24:36 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 23:24:36 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 23:24:36 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 23:24:36 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 23:24:36 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 23:24:39 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 23:24:39 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 23:24:39 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 23:24:39 INFO  es[][o.e.n.Node] initialized
+2021.11.28 23:24:39 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 23:24:39 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:45059}, bound_addresses {127.0.0.1:45059}
+2021.11.28 23:24:40 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 23:24:40 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 23:24:40 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{XavN8_WHTh6LCKtK9uOYDQ}{127.0.0.1}{127.0.0.1:45059}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 44, version: 911, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{XavN8_WHTh6LCKtK9uOYDQ}{127.0.0.1}{127.0.0.1:45059}{cdfhimrsw}]}
+2021.11.28 23:24:40 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{XavN8_WHTh6LCKtK9uOYDQ}{127.0.0.1}{127.0.0.1:45059}{cdfhimrsw}]}, term: 44, version: 911, reason: Publication{term=44, version=911}
+2021.11.28 23:24:40 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 23:24:40 INFO  es[][o.e.n.Node] started
+2021.11.28 23:24:40 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 23:24:43 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][2], [components][1], [components][3]]]).
+2021.11.28 23:28:15 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 23:28:15 INFO  es[][o.e.n.Node] stopped
+2021.11.28 23:28:15 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 23:28:15 INFO  es[][o.e.n.Node] closed
+2021.11.28 23:28:49 INFO  es[][o.e.n.Node] version[7.13.4], pid[38], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 23:28:49 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 23:28:49 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 23:28:50 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 23:28:50 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 23:28:50 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 23:28:50 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 23:28:50 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 23:28:50 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 23:28:50 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 23:28:50 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 23:28:50 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 23:28:50 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 23:28:53 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 23:28:53 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 23:28:53 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 23:28:53 INFO  es[][o.e.n.Node] initialized
+2021.11.28 23:28:53 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 23:28:53 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:35997}, bound_addresses {127.0.0.1:35997}
+2021.11.28 23:28:53 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 23:28:53 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 23:28:54 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{4z6-7Kz3QDykEG0dNB_FDw}{127.0.0.1}{127.0.0.1:35997}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 45, version: 931, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{4z6-7Kz3QDykEG0dNB_FDw}{127.0.0.1}{127.0.0.1:35997}{cdfhimrsw}]}
+2021.11.28 23:28:54 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{4z6-7Kz3QDykEG0dNB_FDw}{127.0.0.1}{127.0.0.1:35997}{cdfhimrsw}]}, term: 45, version: 931, reason: Publication{term=45, version=931}
+2021.11.28 23:28:54 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 23:28:54 INFO  es[][o.e.n.Node] started
+2021.11.28 23:28:54 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 23:28:55 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][2], [components][0], [metadatas][0]]]).
+2021.11.28 23:37:03 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 23:37:03 INFO  es[][o.e.n.Node] stopped
+2021.11.28 23:37:03 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 23:37:03 INFO  es[][o.e.n.Node] closed
+2021.11.28 23:40:13 INFO  es[][o.e.n.Node] version[7.13.4], pid[39], build[default/tar/c5f60e894ca0c61cdbae4f5a686d9f08bcefc942/2021-07-14T18:33:36.673943207Z], OS[Linux/5.10.60.1-microsoft-standard-WSL2/amd64], JVM[AdoptOpenJDK/OpenJDK 64-Bit Server VM/11.0.11/11.0.11+9]
+2021.11.28 23:40:13 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk]
+2021.11.28 23:40:13 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/opt/sonarqube/elasticsearch, -Des.path.conf=/opt/sonarqube/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=false]
+2021.11.28 23:40:13 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.11.28 23:40:13 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.11.28 23:40:13 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.11.28 23:40:13 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.11.28 23:40:13 INFO  es[][o.e.p.PluginsService] loaded module [runtime-fields-common]
+2021.11.28 23:40:13 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.11.28 23:40:13 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.11.28 23:40:13 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sde)]], net usable_space [233gb], net total_space [250.9gb], types [ext4]
+2021.11.28 23:40:13 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.11.28 23:40:13 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [hiSNIaaqS1SwX8KIJvQbKA], cluster name [sonarqube], roles [data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+2021.11.28 23:40:16 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.11.28 23:40:16 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.11.28 23:40:16 INFO  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.11.28 23:40:16 INFO  es[][o.e.n.Node] initialized
+2021.11.28 23:40:16 INFO  es[][o.e.n.Node] starting ...
+2021.11.28 23:40:16 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:42579}, bound_addresses {127.0.0.1:42579}
+2021.11.28 23:40:17 WARN  es[][o.e.b.BootstrapChecks] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+2021.11.28 23:40:17 INFO  es[][o.e.c.c.Coordinator] cluster UUID [Eg9bE9BQTDWyvimCqMnqwA]
+2021.11.28 23:40:17 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{wXpbC7rrTQWHXjxM8jL9NQ}{127.0.0.1}{127.0.0.1:42579}{cdfhimrsw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 46, version: 951, delta: master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{wXpbC7rrTQWHXjxM8jL9NQ}{127.0.0.1}{127.0.0.1:42579}{cdfhimrsw}]}
+2021.11.28 23:40:17 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{hiSNIaaqS1SwX8KIJvQbKA}{wXpbC7rrTQWHXjxM8jL9NQ}{127.0.0.1}{127.0.0.1:42579}{cdfhimrsw}]}, term: 46, version: 951, reason: Publication{term=46, version=951}
+2021.11.28 23:40:17 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.11.28 23:40:17 INFO  es[][o.e.n.Node] started
+2021.11.28 23:40:17 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.11.28 23:40:19 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][2], [components][0], [metadatas][0]]]).
+2021.11.28 23:47:10 INFO  es[][o.e.n.Node] stopping ...
+2021.11.28 23:47:10 INFO  es[][o.e.n.Node] stopped
+2021.11.28 23:47:10 INFO  es[][o.e.n.Node] closing ...
+2021.11.28 23:47:10 INFO  es[][o.e.n.Node] closed
